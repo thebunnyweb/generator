@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Harsh Shah",
+      "authorEmail": "hershd1@icloud.com",
+      "authorUrl": "thebunnyweb.github.io"
+    }
+  }
+}
