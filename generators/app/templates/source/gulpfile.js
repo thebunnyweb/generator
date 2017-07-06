@@ -21,6 +21,11 @@ gulp.task('scripts', function(){
 		debug : true
 	});
 
+	var p = browserify({
+		entries : './source/scripts/plugin.js',
+		debug : true
+	});
+
 	b.bundle()
 	.pipe(source('main.js'))
 	.pipe(buffer())
@@ -30,6 +35,20 @@ gulp.task('scripts', function(){
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest('./app/scripts/'))
 	.pipe(browserSync.stream())
+
+
+	p.bundle()
+	.pipe(source('plugin.js'))
+	.pipe(buffer())
+	.pipe(sourcemaps.init({loadMaps:true}))
+	.pipe(babel({presets: ['es2015']}))
+	.pipe(uglify())
+	.pipe(sourcemaps.write())
+	.pipe(gulp.dest('./app/scripts/'))
+	.pipe(browserSync.stream())
+
+
+
 });
 
 

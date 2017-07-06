@@ -1,3 +1,3 @@
-module.exports = function(){
-	console.log("Loaded from Plugin")	
-}
+window.jQuery = window.$ = require('jquery');
+window.Bootstrap = require('bootstrap');
+var slick = require('slick-carousel');

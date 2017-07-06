@@ -1,6 +1,6 @@
 {
   "name": "generator-bunnyweb",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "bunnyweb generator created by harsh",
   "homepage": "",
   "author": {
@@ -9,7 +9,7 @@
     "url": "thebunnyweb.github.io"
   },
   "files": [
-    "generators"
+    "generators" 
   ],
   "main": "generators/index.js",
   "keywords": [
